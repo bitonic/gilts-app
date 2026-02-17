@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gilts Yield Table</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <h1>Gilts Yield Table</h1>
+    <p id="meta">Loading...</p>
+    <h2>Current Gilts</h2>
+    <div class="table-wrap">
+      <table id="gilts-table-current">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Name</th>
+            <th>ISIN</th>
+            <th>Redemption Date</th>
+            <th>First Issue Date</th>
+            <th>Dividend Dates</th>
+            <th>Total Amount in Issue (£m)</th>
+            <th>Coupon (%)</th>
+            <th>Purchase Date</th>
+            <th>Price</th>
+            <th>Tax Rate (%)</th>
+            <th title="Clean price plus accrued interest at the selected purchase date.">Dirty Price</th>
+            <th title="Effective annual yield solved as XIRR: discount rate r where sum(cashflow / (1+r)^(days/365)) = 0, using initial -dirty price at purchase date and future coupon/redemption cashflows (no tax).">Yield (%)</th>
+            <th title="Annualized IRR when coupon cashflows are reduced by the entered dividend tax rate; principal is unchanged.">Post Tax Return (%)</th>
+            <th title="Required pre-tax yield for an instrument where all gains are taxed at the entered dividend tax rate: Post Tax Return / (1 - tax rate).">Gross Equivalent Yield (%)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <h2 id="past-title">Past Gilts</h2>
+    <div class="table-wrap">
+      <table id="gilts-table-past">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Name</th>
+            <th>ISIN</th>
+            <th>Redemption Date</th>
+            <th>First Issue Date</th>
+            <th>Dividend Dates</th>
+            <th>Total Amount in Issue (£m)</th>
+            <th>Coupon (%)</th>
+            <th>Purchase Date</th>
+            <th>Price</th>
+            <th>Tax Rate (%)</th>
+            <th title="Clean price plus accrued interest at the selected purchase date.">Dirty Price</th>
+            <th title="Effective annual yield solved as XIRR: discount rate r where sum(cashflow / (1+r)^(days/365)) = 0, using initial -dirty price at purchase date and future coupon/redemption cashflows (no tax).">Yield (%)</th>
+            <th title="Annualized IRR when coupon cashflows are reduced by the entered dividend tax rate; principal is unchanged.">Post Tax Return (%)</th>
+            <th title="Required pre-tax yield for an instrument where all gains are taxed at the entered dividend tax rate: Post Tax Return / (1 - tax rate).">Gross Equivalent Yield (%)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

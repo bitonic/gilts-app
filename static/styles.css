@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  margin: 16px;
+  color: #222;
+  background: #f7f8fa;
+}
+
+h1 {
+  margin: 0 0 8px 0;
+}
+
+#meta {
+  margin: 0 0 16px 0;
+  color: #555;
+}
+
+.table-wrap {
+  overflow: auto;
+  border: 1px solid #cdd3da;
+  background: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 1200px;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dbe1e7;
+  padding: 6px 8px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: #eef3f8;
+  text-align: left;
+}
+
+input {
+  width: 100px;
+  box-sizing: border-box;
+}
+
+td.yield, td.taxed-yield, td.taxeq {
+  font-weight: 600;
+}
